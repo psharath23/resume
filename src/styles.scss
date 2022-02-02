@@ -1,0 +1,35 @@
+@import "../node_modules/bootstrap/scss/bootstrap";
+@import "../node_modules/bootstrap/scss/utilities";
+
+$enable-gradients: true;
+$enable-shadows: true;
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.resume {
+  // min-height: 2000px;
+  .header {
+    background: $gray-300;
+  }
+  box-shadow: $box-shadow-lg;
+}
+
+@media print {
+  .App {
+    margin: 0px !important;
+  }
+  .resume {
+    margin: 0px !important;
+    box-shadow: none;
+    .header {
+      background: $gray-300;
+
+    }
+  }
+  
+}
+
+
